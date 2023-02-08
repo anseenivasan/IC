@@ -376,7 +376,7 @@ if __name__ == "__main__":
 
     options, args = parser.parse_args()
 myfile = '/Users/srinara2/Downloads/new_show_run.txt'
-with open(myfile) as f:
+with open(options.file) as f:
     raw = f.read()
     try:
         cfg = raw.decode('utf-8').splitlines()
